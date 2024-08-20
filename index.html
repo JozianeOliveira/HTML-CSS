@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinando HTML</title>
     <link rel="shortcut icon" href="imagens/favicon coracao.ico" type="image/x-icon">
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
@@ -17,23 +22,92 @@
     <p>Inserindo imagem salva em pasta:</p>
     <img src="imagens/menina200.jpeg" alt="menina bonita">
     <p>Direto do link: </p>
-    <img src="https://c.pxhere.com/images/a7/f9/a372fb23fe53d674e6a74d599a7e-1448333.jpg!d" alt="menina bonita">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN8obSLa3lRqjkkpwvKRkXuWm-Vn7eguJKug&s" alt="menina bonita">
     <p>Olha o favicon que inseri...</p>
     <hr>
     <p>Hierarquia de títulos</p>
-    <h1>Entendo o eu lírico</h1>
-    <h2>Introdução</h2>
-    <h3>Entendendo o contexto</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et non est, ratione vitae architecto accusantium ab voluptatibus itaque debitis eius amet vero, sit necessitatibus quod. Impedit eum cum aperiam quod!</p>
-    <h2>Desenvolvimento</h2>
-    <h3>O que é?</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati facere odit blanditiis rerum dolorem voluptate explicabo. Voluptatibus, dolore sequi. Necessitatibus vero iusto incidunt dolorem nesciunt perspiciatis impedit laborum minima?</p>
-    <h3>Como organizar?</h3>
-    <h4>Regra 1</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sed placeat corrupti voluptas nulla, excepturi rerum ratione, obcaecati reprehenderit voluptatem velit. Odit numquam corporis beatae, amet rem fugiat recusandae natus.</p>
-    <h4>Regra 2</h4>
+    <h1>Algumas tags</h1>
+    <h2>Alguns exemplos</h2>
+    <h3>Negrito e itálico</h3>
+    <p> Negrito <strong>Strong</strong> e itálico ou ênfase <Em>Em</Em></p>
+    <h3>Marcador de texto</h3>
+    <p>Para um marcador único usamos: <mark>mark style= "background-color: cor;"</mark>. <br>Para vários marcadores na página, <mark>usamos css no head</mark></p>
+    <h2>Alguns tipos de textos</h2>
+    <h3>Texto pequeno</h3>
+    <p>Usamos a tag <small>small</small></p>
+    <h3>Texto deletado</h3>
+    <p>Para riscar o texto usamos a tag <del>del</del></p>
+    <h3>Texto inserido</h3>
+    <p>Para sublinhar texto usamos a tag <ins>ins</ins></p>
+    <h3>Sobrescrito</h3>
+    <p>Para x elevado à vinte mais três usamos sup: x<sup>20</sup> + 3 </p>
+    <h3>Subscrito</h3>
+    <p>Para a fórmula da água usamos sub: H<sub>2</sub>O </p>
+    <h4>Endereços</h4>
     <p>
         Ela mora na <address>Rua dos Capixabas, 229 - Botafogo - RJ</address>
     </p>
+    <h3>Código fonte code</h3>
+    <p>Para espaçar letras <code>igualmente</code></p>
+    <h3>Pré formatação pré + code</h3>
+    <p>
+        <pre>
+            <code>
+            num = int (imput('Digite'))
+            ifnum % 2 == 0:
+                print(f 'O número {num} é par')
+            else:
+                print(f 'O número é ímpar')
+                print('Fim do progrma')
+            </code>
+        </pre>
+    </p>
+    <h3>Citação curta q</h3>
+    <p>Como dizia fulano <q>A vida não é fácil</q>.</p>
+    <h3>Citação longa</h3>
+    <p>De acordo com beltrno: <abbr title="link de referência">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugiat ipsum cumque aspernatur! Recusandae odit sapiente temporibus fuga minus impedit qui quas porro, officiis ipsa quisquam possimus nam autem! Praesentium.</abbr></p>
+    <h3>Texto invertido bdo</h3>
+    <p>Amor ao contrário é: <bdo dir="rtl">Amor</bdo></p>
+    <hr>
+    <h1>Listas</h1>
+    <h2>Ordenadas ol</h2>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Levantar</li>
+        <li>Trabalhar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Não Ordenadas ul</h2>
+    <p>type: circle, disc, square</p>
+    <ul type="square"> 
+        <li>Acordar</li>
+        <li>Levantar</li>
+        <li>Trabalhar</li>
+        <li>Dormir</li>
+    </ul>
+    <h2>Listas Mistas</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <ul type="square">
+            <li>Arrumar a cama</li>
+            <ul type="disc">
+                <li>Guardar o edredom</li>
+            </ul>
+        </ul>
+        <li>Levantar</li>
+        <ul type="circle">
+            <li>Alongar</li>
+        </ul>
+    </ol>
+    <h2>Listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação</dd>
+    </dl>
+    <hr>
+    <h2>Links externos</h2>
+    <p> Visite meu perfil no <a href="https://www.linkedin.com/in/joziane-oliveira/" target="_blank" rel="external">linkedin</a></p>
+    <p> Visite meu perfil no <a href="https://github.com/JozianeOliveira" target="_blank" rel="external">gitihub</a></p>
+    <a href="page2.html">Conheça minha segunda página.</a>
 </body>
 </html>
