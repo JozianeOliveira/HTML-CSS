@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinando HTML</title>
     <link rel="shortcut icon" href="imagens/favicon coracao.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <style>
         mark {
             background-color: aqua;
@@ -119,6 +120,20 @@
         <source media="(max-width:750px)" srcset="imagens/fotoP.png" type="image/png">
         <source media="(max-width:1050px)" srcset="imagens/fotoM.png" type="image/png">
         <img src="imagens/fotoG.png" alt="Imagem flexível">
-    </picture>    
+    </picture> 
+    <h2>Áudio</h2>
+    <audio controls preload="metadata" autoplay loop>
+         <source src="audios/audiomp3.mp3" type="audio/mpeg">  
+         <source src="audios/audioogg.ogg" type="audio/ogg"> 
+         <p>Infelizmente seu navegador não consegue reproduzir esse áudio. <a href="audios/audiomp3.mp3">Faça o download.</a></p> 
+    </audio>    
+    <h2>Vídeo hospedado localmente</h2>
+    <video width="560" poster="imagens/capavideo.jpg" controls autoplay loop>
+        <source src="videos/Videomp4.mp4" type="video/mp4">
+        <source src="videos/Videowebm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodção de vídeos</p>
+    </video>
+    <h2>Video externo</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/W6fnFcSFtkc?si=d-3ieoS2p7jsWmH-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
