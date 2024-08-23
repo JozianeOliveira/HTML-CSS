@@ -1,2 +1,2 @@
-# HTML-CSS
+# Repositório exclusivo para treinar HTML-CSS
  
