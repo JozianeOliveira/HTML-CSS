@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 3px;            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: white;
+        }
+
+        article > aside {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Notícias">
+            <article>
+                <h2>Notícia 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor, ut labore corporis omnis ex sit! Officia porro aspernatur recusandae ab non sunt labore nihil molestiae, delectus et maiores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus, facere adipisci rerum magni saepe incidunt dicta ullam quo, at repellendus, deleniti ipsum quae necessitatibus nostrum atque! Earum, pariatur nisi?</p>
+                <p>lorem</p>
+                <aside>
+                    <p>Artigo de fulano</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícia 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor, ut labore corporis omnis ex sit! Officia porro aspernatur recusandae ab non sunt labore nihil molestiae, delectus et maiores neque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus, facere adipisci rerum magni saepe incidunt dicta ullam quo, at repellendus, deleniti ipsum quae necessitatibus nostrum atque! Earum, pariatur nisi?</p>
+                <p>lorem</p>
+                <aside>
+                    <p>Artigo de fulano</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por fulano</p>
+    </footer>    
+</body>
+</html>
