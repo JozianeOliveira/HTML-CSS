@@ -30,9 +30,15 @@ main {
 h1 {
     font-family: "Dancing Script", cursive;
     font-size: 3em;
-    text-align: center;
+    text-align: justify;
     color: #70374E;
     text-shadow: 1px 1px 2px #472331b0;
+}
+
+#principal {
+    text-align: center;
+    background-color: #5D3770;
+    color: aliceblue;
 }
 
 h2 {
@@ -45,7 +51,21 @@ h2 {
     font: italic bolder 2em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h3 {
+.basico {
+    color:red
+}
+
+.intermediario{
+    color: blue;
+}
+.avancado{
+    color:green;
+}
+.destaque{
+    background-color: rgba(0, 255, 255, 0.084);
+}
+    
+   h3{
     font-family: 'dream';
     font-size: 2em;
     font-weight: bold;
@@ -53,4 +73,5 @@ h3 {
 
 p {
     text-align: justify;
+    text-indent: 20px;
 }
