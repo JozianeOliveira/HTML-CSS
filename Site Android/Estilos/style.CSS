@@ -6,8 +6,7 @@
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype'), url('../fontes/idroid.woff') format('woff');
     font-weight: normal;
-}
-  
+}  
 
 
 :root {
@@ -51,7 +50,15 @@ nav {
 }
 
 main {
+    min-width: 300px;
+    max-width: 1000px; 
+    margin: auto;
+    margin-botton: 30px;
+    padding: 20px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, o.499);
+    border-botton-left-radius: 10px;
+    border-botton-right-radius: 10px;
 }
 
 main > h1 {
@@ -61,6 +68,16 @@ main > h1 {
 
 main > h2 {
     font-family: var(--font-android);
+}
+
+main > img {
+    width: 100%;
+}
+
+main > img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 footer {
