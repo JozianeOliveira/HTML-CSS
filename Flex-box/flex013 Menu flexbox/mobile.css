@@ -23,7 +23,7 @@ header > span#burguer {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    margin-top: 10px; /* Ajuste o espaço entre o h1 e o botão */
+    margin-top: -130px; /* procurar solução correta */
 }
 
 header > span#burguer:hover {
@@ -58,4 +58,4 @@ header > nav > a:hover {
 /* Torna o menu visível quando o botão hamburguer é clicado */
 body.menu-active header > nav {
     display: flex;
-}
+}  
