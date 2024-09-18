@@ -31,6 +31,7 @@ header > h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.499);
 }
 
+
 header > nav {
     /*border: 1px dotted black;*/
     
@@ -53,6 +54,10 @@ header > nav > a:hover {
     background-color: white;
     color: black;
     transition: 0.5s;
+}
+
+header > span#burguer {
+    display: none;
 }
 
 main {

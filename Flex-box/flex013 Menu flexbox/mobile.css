@@ -1,14 +1,61 @@
 @charset "UTF-8";
 
-header, header > nav {
-    flex-flow: column nowrap;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 header > h1 {
-    flex-basis: 50px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+header > span#burguer {
+    display: block;
+    background-color: black;
+    color: white;
+    width: 90vw;
+    padding: 7px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px; /* Ajuste o espaço entre o h1 e o botão */
+}
+
+header > span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+header > nav {
+    display: none; /* Oculta o menu por padrão em telas pequenas */
+    flex-direction: column;
+    width: 100%;
+    background-color: gray;
+    margin-top: 10px;
 }
 
 header > nav > a {
-    width: 90vw;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
 }
 
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Torna o menu visível quando o botão hamburguer é clicado */
+body.menu-active header > nav {
+    display: flex;
+}
