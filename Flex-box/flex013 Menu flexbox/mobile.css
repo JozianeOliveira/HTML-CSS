@@ -47,7 +47,7 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    display: block;
+    display: block;    
 }
 
 header > nav > a:hover {
